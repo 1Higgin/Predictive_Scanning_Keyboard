@@ -136,3 +136,106 @@ Prototype stage:
 ## License
 
 TBD
+
+======
+## Physical Interface Concept
+
+The system is designed to operate on a **minimal, keyless touch surface**, rather than a traditional mechanical keyboard.
+
+### Key Characteristics
+
+- **No physical keys**
+- Flat or slightly contoured surface
+- Input via:
+  - capacitive touch
+  - pressure / force sensing (optional)
+  - single or multiple touch zones
+- Can be implemented as:
+  - standalone device
+  - embedded surface (e.g. desk, armrest, wearable)
+  - hybrid with existing hardware
+
+---
+
+## Why Remove Physical Keys
+
+Traditional keyboards:
+- Require precise spatial targeting
+- Depend on finger positioning and travel
+- Scale poorly for one-handed use
+- Introduce mechanical complexity
+
+This system replaces spatial accuracy with:
+- **timing-based selection**
+- **predictive ordering**
+- **context-aware input**
+
+---
+
+## Advantages
+
+### Reduced Motor Demand
+- No need to locate or press specific keys
+- Works with minimal movement or a single contact point
+
+### Hardware Simplicity
+- Fewer moving parts
+- Lower mechanical wear
+- Potentially lower manufacturing complexity
+
+### Flexible Form Factor
+- Can be:
+  - compact
+  - wearable
+  - integrated into other surfaces
+- Not constrained by key layout geometry
+
+### Scalable Input Surface
+- Same system works with:
+  - one touch point
+  - multiple zones
+  - larger touch panels
+
+### Alignment with Predictive Input
+- Physical interface does not need to encode meaning
+- All complexity handled in software (prediction + scanning)
+
+---
+
+## Trade-Offs / Limitations
+
+### Lack of Tactile Feedback
+- No physical key press confirmation
+- May require visual or haptic feedback alternatives
+
+### Learning Curve
+- Users must adapt to:
+  - scanning timing
+  - predictive selection
+- Different from conventional typing habits
+
+### Dependence on Prediction Quality
+- System efficiency relies heavily on:
+  - accuracy of predictions
+  - relevance of suggested phrases
+
+### Slower Raw Input (Without Prediction)
+- If prediction fails, fallback (letters/functions) is slower than a keyboard
+
+### Visual Dependency
+- Requires user attention on display
+- Not suitable for fully blind typing without additional feedback systems
+
+---
+
+## Design Position
+
+This is not a direct replacement for a mechanical keyboard in all contexts.
+
+Instead, it represents:
+- a **software-driven input layer**
+- decoupled from physical key constraints
+- optimized for **low-effort, predictive sentence construction**
+
+The physical surface is intentionally simplified so that:
+> **intelligence is moved from hardware into the interaction model**
